@@ -5,7 +5,7 @@ from fractions import Fraction
 from time import sleep
 import sys
 
-sys.set_int_max_str_digits(640)
+sys.set_int_max_str_digits(144000)
 
 ip = Fraction(1, 10000000000000000000000000000001)
 
@@ -84,7 +84,7 @@ def m(n):
     if n > 100: return n - 10
     return m(m(n + 11))
 
-q, r, w = '100000001', '900001', 3
+q, r, w = '1111111100000001', '11', 2
 while q[w:]:
     if r[0] == '0': q = q[1:]
     else:
