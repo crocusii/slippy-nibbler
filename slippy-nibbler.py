@@ -10,7 +10,7 @@ sys.set_int_max_str_digits(144000)
 ip = Fraction(1, 10000000000000000000000000000001)
 
 commands = [Fraction(3, 2), 10000000000000000000000000000001, 91111111, 0, 3, 11111111111]
-user_input = input("Initialize:")
+user_input = 7
 
 def is_integer(s):
     try:
@@ -48,7 +48,7 @@ def r30(a, b, c):
     else:
         return 0
 
-r = [int(x) for x in format(int(input("T:")), '08b')]
+r = [int(x) for x in format(int(7), '08b')]
 cx, step = 180, 26
 c, cn = [0] * cx, [0] * cx
 c[cx // 2:cx // 2 + 8] = r
